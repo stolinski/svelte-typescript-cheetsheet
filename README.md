@@ -41,3 +41,7 @@ export let data: Writable<BlogPost>
 ### Types in Svelte Template Code
 
 This is not currently supported.
+
+### JSDoc Type Checking
+
+For now, see: https://www.swyx.io/jsdoc-swyxkit/
