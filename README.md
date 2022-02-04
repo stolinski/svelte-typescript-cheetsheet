@@ -14,6 +14,30 @@ Basically, if need a prop to be optional, you need to assign it a value when def
 </script>
 ```
 
+### Stores
+
+```javascript
+
+interface BlogPost {
+    status: "ACTIVE" | "HIDDEN"
+}
+
+
+const post = writable<BlogPost>({
+	status: 'ACTIVE',
+})
+```
+
+To type an expected store, like passing a store as a prop, you would use the Writable generic type.
+
+```javascript
+import type { Writable } from 'svelte/store';
+
+export let data: Writable<BlogPost>
+
+```
+
+
 ### Types in Svelte Template Code
 
 This is not currently supported.
