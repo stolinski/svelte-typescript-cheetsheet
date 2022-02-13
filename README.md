@@ -1,5 +1,7 @@
-# svelte-typescript-cheetsheet
-
+<div align="center">
+	<h1>Svelte+TypeScript Cheatsheets</h1>
+	
+</div>
 ### Typing Props
 
 * required props are just defined like normal with a : to inidicate the type.
