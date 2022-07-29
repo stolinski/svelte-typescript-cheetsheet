@@ -39,6 +39,24 @@ export let data: Writable<BlogPost>
 
 ```
 
+### Events
+
+```javascript
+const dispatch = createEventDispatcher<{ nameOfEvent: { passedProperties: any } }>()
+```
+
+here is the same thing with real code.
+
+```javascript
+const dispatch = createEventDispatcher<{ toggle: { isToggled: boolean } }>()
+
+// Now I'm typed!
+dispatch('toggle', {
+	isToggled,
+})
+
+```
+
 
 ### Types in Svelte Template Code
 
